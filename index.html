@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Ben Said - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="name-section">
+                <h1>Ahmed Ben Said</h1>
+                <div class="contact-links">
+                    <a href="mailto:ahmed.ben.said660@gmail.com">
+                        <i class="fas fa-envelope"></i> ahmed.ben.said660@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/ahmed-bensaid-83844225b/" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#recommendations">Recommendations</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <section id="about">
+        <h2 style="color: blueviolet;">About Me</h2>
+        <div class="profile">
+            <img src="profile-image.jpg" alt="Profile Picture" class="profile-img">
+            <div class="profile-text">
+                <p>
+                    I am currently studying Software Engineering at Polytech Intl, specializing in developing cutting-edge, high-performance applications. With a keen analytical mindset and strong problem-solving abilities, I strive to bring innovation and technical expertise to ambitious web projects, ensuring impactful and efficient solutions.
+                </p>
+                <h3>Contact Info</h3>
+                <ul>
+                    <li>Phone: +21622905938</li>
+                    <li>Email: <a href="mailto:ahmed.ben.said660@gmail.com">ahmed.ben.said660@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/ahmed-bensaid-83844225b/" target="_blank">LinkedIn Profile</a></li>
+                    <li>GitHub: <a href="https://github.com/Obito511" target="_blank">Github Profile</a></li>
+                    <li>Location: Soliman, Nabeul</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 style="color: blueviolet;">Skills</h2>
+        <div class="skills-list">
+            <div class="card">
+                <img src="html.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>2 years experience</p>
+            </div>
+            <div class="card">
+                <img src="js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>0.5 years experience</p>
+            </div>
+            <div class="card">
+                <img src="java.png" alt="Java">
+                <h3>Java</h3>
+                <p>1.5 years experience</p>
+            </div>
+            <div class="card">
+                <img src="angular.png" alt="React">
+                <h3>Angular</h3>
+                <p>1.5 year experience</p>
+            </div>
+            <div class="card">
+                <img src="spring.png" alt="Node.js">
+                <h3>SpringBoot</h3>
+                <p>1.5 year experience</p>
+            </div>
+            <div class="card">
+                <img src="css.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>2 years experience</p>
+            </div>
+            <div class="card">
+                <img src="oracle.png" alt="oracle" style=" width: 80px;height: 80px;">
+                <h3>Oracle Database</h3>
+                <p>0.5 years experience</p>
+            </div>
+            <div class="card">
+                <img src="mysql.png" alt="mysql" style=" width: 70px;height: 70px;">
+                <h3>MySQL</h3>
+                <p>2 years experience</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 style="color: blueviolet;">Projects</h2>
+        <div class="project">
+            <h3>Final Year Internship – National Broadcasting Office</h3>
+            <p>
+                During my final year internship at the National Broadcasting Office (Jan 2023 - June 2023), I designed and developed a web and mobile intranet application, built user interfaces with HTML, Angular, Flutter, and CSS, implemented REST APIs, configured routing, developed backend services with Java, Spring Boot, and MySQL, and integrated security using Basic Authentication and JWT.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Final Year Project Internship – Web Development: Insurance Management </h3>
+            <p>
+                During my end-of-year internship (June 2022 - August 2022), I developed interactive and responsive web pages using HTML, CSS, and Angular, and integrated REST APIs with Swagger to retrieve and display insurance data.
+            </p>
+        </div>
+        <div class="project">
+            <h3>E-Commerce Web Development Project</h3>
+            <p>
+                In 2022, I developed an eCommerce web project, creating an intuitive and responsive interface using HTML, CSS, and Angular, and configuring a MySQL database to manage product, customer, and transaction data.            </p>
+        </div>
+    </section>
+
+    <section id="recommendations" class="section">
+        <h2 style="color: blueviolet;">Recommendations</h2>
+        <div class="recommendations-container" id="recommendations-container">
+        </div>
+    <br>
+        <div class="recommendation-form">
+            <h3>Submit a Recommendation</h3>
+            <form id="recommendation-form">
+                <textarea id="recommendation-input" placeholder="Write your recommendation here..." required></textarea>
+                <input type="text" id="author-input" placeholder="Your Name" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <div class="container">
+            <p>Ahmed Ben Said © 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

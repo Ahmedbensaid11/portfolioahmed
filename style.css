@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-color: #9e00fa;
+    color: white;
+    padding: 15px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+/* Name, Email, and LinkedIn */
+.name-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-section h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.contact-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-links a i {
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Responsive Navbar */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Main Sections */
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-text ul li {
+    margin-bottom: 10px;
+}
+
+/* Skills */
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 180px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Recommendations Section */
+#recommendations {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.recommendations-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.recommendation-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-10px);
+}
+
+.recommendation-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.recommendation-author {
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
+
+/* Recommendation Form */
+.recommendation-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recommendation-form h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#recommendation-input,
+#author-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+#recommendation-input {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .name-section {
+        align-items: center;
+    }
+
+    .contact-links {
+        justify-content: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 auto 10px;
+    }
+
+    .recommendations-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-list {
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .recommendation-form {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    #recommendation-input,
+    #author-input {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+    }
+}
